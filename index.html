@@ -18,9 +18,22 @@
   <main id="app">
 	<div class="container-fluid">
 		<div class="row">
-			<header class="col-sm-12 fixed-top">
-				<img src="images/roku.svg" alt="Roku logo" width="90"><span>FlashBack</span>
-				<nav class="float-right">
+			<header class="mainHeader">   
+				<!-- Our Logo Here -->
+					<div class="mainLogo">
+						<img src="images/orange-logo.svg" alt="mainlogo">
+					</div>
+				<!-- Our Admin Icon Here -->
+					<div class="adminIcon">
+						<img src="images/admin.png" alt="admin">
+					</div> 
+				</header>
+				<!-- Menu -->
+				<section class="menu">
+					<button @click="switchMovie" class="menubtn">Movie</button>
+					<button @click="switchAudio" class="menubtn">Audio</button>
+					<button @click="switchTv" class="menubtn">TV</button>
+				</section>
 				<ul>
 					<!-- <li>Kids</li> -->            
 					<li v-if="authenticated"><i class="fas fa-user-circle"></i></li>
@@ -30,26 +43,27 @@
 				</nav>
 			</header>
 		</div>
-	</div> <!-- end container fluid -->
+	</div>
 	
-	<!-- first thing in component templates should be a container -->
 	<router-view @authenticated="setAuthenticated"/>	
 
 	</main>
 
-	<footer>
-		<p class="copy">
-			&copy; 2018 The Awesome Company, Inc
-		</p>
-
-		<ul class="float-right">
-			<li><i class="fab fa-facebook"></i></li>
-			<li><i class="fab fa-twitter-square"></i></li>
-			<li><i class="fab fa-google-plus-square"></i></li>
-			<li><i class="fab fa-instagram"></i></li>
-		</ul>
-	</footer>
-
+	    <!--Footer-->
+		<footer class="mainFooter">
+			<div class="footerLogo">
+				<img src="images/orange-logo.svg" alt="mainlogo">
+			</div>
+			<div class="socialicons">
+				<img src="images/sns_instagram.svg" alt="insta">
+				<img src="images/sns_twitter.svg" alt="twitter">
+				<img src="images/sns_facebook.svg" alt="facebook">
+			</div>
+			<p>2020 Roku. Inc</p>
+		</footer>
+		</main>
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

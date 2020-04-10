@@ -1,6 +1,3 @@
-$dark-bg: rgb(26, 24, 24);
-$roku-purple: #6C3C97;
-
 @mixin vertical-align($position: relative) {
     position: $position;
     top: 50%;
@@ -8,4 +5,11 @@ $roku-purple: #6C3C97;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+$theme_orange: #ff7700;
+$theme_blue: #262037;
+
+$bg_blue: #0093b3;
+$bg_green: #19ff26;
+$bg_gray: #f1f1f1;
   
