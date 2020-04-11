@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 09, 2020 at 06:51 PM
+-- Generation Time: Apr 11, 2020 at 04:57 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -33,7 +33,7 @@ CREATE TABLE `tbl_kids_movie` (
   `kids_mov_genre` varchar(20) COLLATE utf8_bin NOT NULL,
   `kids_mov_IMDb` varchar(20) COLLATE utf8_bin NOT NULL,
   `kids_mov_poster` varchar(50) COLLATE utf8_bin NOT NULL,
-  `kids_mov_trailer` varchar(150) COLLATE utf8_bin NOT NULL,
+  `kids_mov_trailer` varchar(50) COLLATE utf8_bin NOT NULL,
   `kids_mov_storyline` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -42,21 +42,21 @@ CREATE TABLE `tbl_kids_movie` (
 --
 
 INSERT INTO `tbl_kids_movie` (`kids_mov_id`, `kids_mov_title`, `kids_mov_release`, `kids_mov_genre`, `kids_mov_IMDb`, `kids_mov_poster`, `kids_mov_trailer`, `kids_mov_storyline`) VALUES
-(1, 'Home Alone', 1990, 'Family', '7.6', 'kidsmovie-90-poster-1.jpg', 'https://www.youtube.com/watch?v=6BccEm7RPTY', 'Eight-year-old Kevin is accidentally left behind when his family leaves for France. At first, he is happy to be in charge, but when thieves try to break into his home, he tries to put up a fight.'),
-(2, 'Matilda', 1996, 'Family', '6.9', 'kidsmovie-90-poster-2.jpg', 'https://www.youtube.com/watch?v=mPvuVAUEETg', 'Matilda shares a home with her parents and brother, who do not appreciate her. When her principal tortures her and a kind-hearted teacher, she uses her telekinetic powers to settle scores.'),
-(3, 'The Lion King', 1994, 'Animation', '8.5', 'kidsmovie-90-poster-3.jpg', 'https://www.youtube.com/watch?v=VSZFisPbMEs', 'As a cub, Simba is forced to leave the Pride Lands after his father Mufasa is murdered by his wicked uncle, Scar. Years later, he returns as a young lion to reclaim his throne.'),
-(4, 'My Neighbor Totoro', 1988, 'Animation', '8.2', 'kidsmovie-80-poster-2.jpg', 'https://www.youtube.com/watch?v=Mb2ZTQuNpYI', 'Mei and Satsuki shift to a new house to be closer to their mother who is in the hospital. They soon become friends with Totoro, a giant rabbit-like creature who is a spirit.'),
-(5, 'E.T', 1982, 'Family', '7.8', 'kidsmovie-80-poster-3.jpg', 'https://www.youtube.com/watch?v=DsS1MJdzQxM', 'An alien is left behind on Earth and is saved by young Elliot who decides to keep him hidden. While the task force hunts for it, Elliot and his siblings form an emotional bond with their new friend.'),
-(6, 'Adventures of Winnie the Pooh', 1976, 'Family', '7.6', 'kidsmovie-70-poster-1.jpg', 'https://www.youtube.com/watch?v=Aush1IZ1WZg', 'Sebastian Cabot narrates the adventures of bumbling bear Winnie the Pooh as he battles a nest of vicious bees over a trove of honey, weathers a terrible wind storm and endures the foibles of the hyperactive tiger Tigger, all while singing and bumbling his way through the Hundred Acre Wood.'),
-(7, 'The Aristocats', 1970, 'Animation', '7.1', 'kidsmovie-70-poster-2.jpg', 'https://www.youtube.com/watch?v=wjA5LWNUPDY', 'A retired old lady, living a lavish life in Paris, wills all her possessions to her four cats. The greedy butler kidnaps the cats, but a bunch of retired army dogs and a stray cat stand in his way.'),
-(8, 'Robin Hood', 1973, 'Animation', '7.6', 'kidsmovie-70-poster-3.jpg', 'https://www.youtube.com/watch?v=c5Qph47c2uE', 'Robin Hood, an outlaw, starts forming a gang in Sherwood Forest to fight the injustices of the Sheriff of Nottingham. The sheriff, on orders of the greedy prince, levies unjust taxes upon the people.'),
-(9, 'One Hundred and One Dalmatians', 1961, 'Animation', '7.2', 'kidmovie-60-poster-1.jpg', 'https://www.youtube.com/watch?v=2RIuRiQk0Mk', 'Cruella de Vil, an evil heiress, wants to make a fur coat for herself out of the skins of a hundred and one Dalmatian puppies. She makes an effort to kidnap them by hiring a group of thugs.'),
-(10, 'The Jungle Book', 1967, 'Family', '7.6', 'kidsmovie-60-poster-2.jpg', 'https://www.youtube.com/watch?v=vjez0g7BTLQ', 'Mowgli is a young boy who has been raised by wolves. When a man-eating tiger threatens his life, his animal family tries to convince him to leave the jungle and live in the human village.'),
-(11, 'The Sword in the Stone', 1963, 'Animation', '7.2', 'kidsmovie-60-poster-3.jpg', 'https://www.youtube.com/watch?v=ThOtoGV6ylU', 'Frustrated of living in a Medieval mess, Merlin uses all his magical powers to change a skinny little boy into a legendary hero.'),
-(12, 'Alice in Wonderland', 1951, 'Animation', '7.4', 'kidsmovie-50-poster-1.jpg', 'https://www.youtube.com/watch?v=kt4oPazlNlE', 'After watching a scurrying rabbit in a waistcoat, Alice, a young and curious girl, follows him down his hole to Wonderland, and meets an array of anthropomorphic creatures who defy logic and reason.'),
-(13, 'Lady and the Tramp', 1955, 'Family', '7.3', 'kidsmovie-50-poster-2.jpg', 'https://www.youtube.com/watch?v=iE9D5WeklD4', 'Lady, a female dog, feels neglected when Jim and Darling get a baby in the house. Later, when Aunt Sarah gets her twin Siamese cats, Lady is blamed for all the havoc they wreak.'),
-(14, 'White Mane: The Wild Horse', 1953, 'Drama', '7.3', 'kidsmovie-50-poster-3.jpg', 'https://www.youtube.com/watch?v=29xy85Z3_ok', 'White Mane is a 1953 short film directed by French filmmaker Albert Lamorisse. It is based on a children\'s book with the same name by the French author René Guillot.'),
-(15, 'The Little Mermaid', 1989, 'Animation', '7.6', 'kidsmovie-80-poster-1.jpg', 'https://www.youtube.com/watch?v=m9VIvQkhsrU', 'A beautiful mermaid called Ariel makes a deal with Ursula, a sea witch, to meet Eric, a human prince she falls in love with. However, unaware of Ursula\'s evil plans, Ariel ends up in trouble.');
+(1, 'Home Alone', 1990, 'Family', '7.6', 'kidsmovie-90-poster-1.jpg', 'homealone.mp4', 'Eight-year-old Kevin is accidentally left behind when his family leaves for France. At first, he is happy to be in charge, but when thieves try to break into his home, he tries to put up a fight.'),
+(2, 'Matilda', 1996, 'Family', '6.9', 'kidsmovie-90-poster-2.jpg', 'Matilda.mp4', 'Matilda shares a home with her parents and brother, who do not appreciate her. When her principal tortures her and a kind-hearted teacher, she uses her telekinetic powers to settle scores.'),
+(3, 'The Lion King', 1994, 'Animation', '8.5', 'kidsmovie-90-poster-3.jpg', 'Thelionking.mp4', 'As a cub, Simba is forced to leave the Pride Lands after his father Mufasa is murdered by his wicked uncle, Scar. Years later, he returns as a young lion to reclaim his throne.'),
+(4, 'My Neighbor Totoro', 1988, 'Animation', '8.2', 'kidsmovie-80-poster-2.jpg', 'Myneighbortotoro.mp4', 'Mei and Satsuki shift to a new house to be closer to their mother who is in the hospital. They soon become friends with Totoro, a giant rabbit-like creature who is a spirit.'),
+(5, 'E.T', 1982, 'Family', '7.8', 'kidsmovie-80-poster-3.jpg', 'e.t.mp4', 'An alien is left behind on Earth and is saved by young Elliot who decides to keep him hidden. While the task force hunts for it, Elliot and his siblings form an emotional bond with their new friend.'),
+(6, 'Adventures of Winnie the Pooh', 1976, 'Family', '7.6', 'kidsmovie-70-poster-1.jpg', 'Adventuresofwinniethepooh.mp4', 'Sebastian Cabot narrates the adventures of bumbling bear Winnie the Pooh as he battles a nest of vicious bees over a trove of honey, weathers a terrible wind storm and endures the foibles of the hyperactive tiger Tigger, all while singing and bumbling his way through the Hundred Acre Wood.'),
+(7, 'The Aristocats', 1970, 'Animation', '7.1', 'kidsmovie-70-poster-2.jpg', 'Thearistocats.mp4', 'A retired old lady, living a lavish life in Paris, wills all her possessions to her four cats. The greedy butler kidnaps the cats, but a bunch of retired army dogs and a stray cat stand in his way.'),
+(8, 'Robin Hood', 1973, 'Animation', '7.6', 'kidsmovie-70-poster-3.jpg', 'Robinhood.mp4', 'Robin Hood, an outlaw, starts forming a gang in Sherwood Forest to fight the injustices of the Sheriff of Nottingham. The sheriff, on orders of the greedy prince, levies unjust taxes upon the people.'),
+(9, 'One Hundred and One Dalmatians', 1961, 'Animation', '7.2', 'kidmovie-60-poster-1.jpg', 'Onehundredandonedalmatians.mp4', 'Cruella de Vil, an evil heiress, wants to make a fur coat for herself out of the skins of a hundred and one Dalmatian puppies. She makes an effort to kidnap them by hiring a group of thugs.'),
+(10, 'The Jungle Book', 1967, 'Family', '7.6', 'kidsmovie-60-poster-2.jpg', 'Thejunglebook.mp4', 'Mowgli is a young boy who has been raised by wolves. When a man-eating tiger threatens his life, his animal family tries to convince him to leave the jungle and live in the human village.'),
+(11, 'The Sword in the Stone', 1963, 'Animation', '7.2', 'kidsmovie-60-poster-3.jpg', 'Theswordinthestone.mp4', 'Frustrated of living in a Medieval mess, Merlin uses all his magical powers to change a skinny little boy into a legendary hero.'),
+(12, 'Alice in Wonderland', 1951, 'Animation', '7.4', 'kidsmovie-50-poster-1.jpg', 'Aliceinwonderland.mp4', 'After watching a scurrying rabbit in a waistcoat, Alice, a young and curious girl, follows him down his hole to Wonderland, and meets an array of anthropomorphic creatures who defy logic and reason.'),
+(13, 'Lady and the Tramp', 1955, 'Family', '7.3', 'kidsmovie-50-poster-2.jpg', 'Ladyandthetramp.mp4', 'Lady, a female dog, feels neglected when Jim and Darling get a baby in the house. Later, when Aunt Sarah gets her twin Siamese cats, Lady is blamed for all the havoc they wreak.'),
+(14, 'White Mane: The Wild Horse', 1953, 'Drama', '7.3', 'kidsmovie-50-poster-3.jpg', 'Whiteanethewildhorse.mp4', 'White Mane is a 1953 short film directed by French filmmaker Albert Lamorisse. It is based on a children\'s book with the same name by the French author René Guillot.'),
+(15, 'The Little Mermaid', 1989, 'Animation', '7.6', 'kidsmovie-80-poster-1.jpg', 'Thelittlemermaid.mp4', 'A beautiful mermaid called Ariel makes a deal with Ursula, a sea witch, to meet Eric, a human prince she falls in love with. However, unaware of Ursula\'s evil plans, Ariel ends up in trouble.');
 
 -- --------------------------------------------------------
 
@@ -109,7 +109,7 @@ CREATE TABLE `tbl_kids_tv` (
   `kids_tv_genre` varchar(15) COLLATE utf8_bin NOT NULL,
   `kids_tv_IMDb` varchar(5) COLLATE utf8_bin NOT NULL,
   `kids_tv_poster` varchar(50) COLLATE utf8_bin NOT NULL,
-  `kids_tv_trailer` varchar(150) COLLATE utf8_bin NOT NULL,
+  `kids_tv_trailer` varchar(50) COLLATE utf8_bin NOT NULL,
   `kids_tv_description` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -118,21 +118,21 @@ CREATE TABLE `tbl_kids_tv` (
 --
 
 INSERT INTO `tbl_kids_tv` (`kids_tv_id`, `kids_tv_title`, `kids_tv_release`, `kids_tv_genre`, `kids_tv_IMDb`, `kids_tv_poster`, `kids_tv_trailer`, `kids_tv_description`) VALUES
-(1, 'Arthur', 1996, 'Comedy', '7.3', 'kidstv-90-poster-1.jpg', 'https://www.youtube.com/watch?v=Th0ekLQraqo', 'Bespectacled aardvark Arthur Read demonstrates to kids how to deal with such childhood traumas and challenges as homework, teachers and bullies.'),
-(2, 'The Magic', 1994, 'Animation', '7.9', 'kidstv-90-poster-2.jpg', 'https://www.youtube.com/watch?v=v53mhRXXT2g', 'Scholastic\'s \"The Magic School Bus\" follows Ms. Frizzle and her class as they set off on field trips. Based on the best-selling book series of the same name, \"The Magic School Bus\" takes kids on a virtual bus ride.'),
-(3, 'SpongeBob SquarePants', 1999, 'Animation', '8.1', 'kidstv-90-poster-3.jpg', 'https://www.youtube.com/watch?v=r9L4AseD-aA', 'A yellow sea sponge named SpongeBob SquarePants lives in the city of Bikini Bottom deep in the Pacific Ocean. He works at the Krusty Krab restaurant and is friends with a starfish named Patrick.'),
-(4, 'He-Man and the Masters of the Universe', 1983, 'Adventure', '7.5', 'kidstv-80-poster-1.jpg', 'https://www.youtube.com/watch?v=7yeA7a0uS3A', 'When he holds up the magical Sword of Power and utters the words \"By the power of Grayskull,\" Prince Adam transforms into Eternia\'s greatest champion, He-Man, who uses his powers to defend the realm from Skeletor and his evil forces.'),
+(1, 'Arthur', 1996, 'Comedy', '7.3', 'kidstv-90-poster-1.jpg', 'Arthur.mp4', 'Bespectacled aardvark Arthur Read demonstrates to kids how to deal with such childhood traumas and challenges as homework, teachers and bullies.'),
+(2, 'The Magic', 1994, 'Animation', '7.9', 'kidstv-90-poster-2.jpg', 'Themagic.mp4', 'Scholastic\'s \"The Magic School Bus\" follows Ms. Frizzle and her class as they set off on field trips. Based on the best-selling book series of the same name, \"The Magic School Bus\" takes kids on a virtual bus ride.'),
+(3, 'SpongeBob SquarePants', 1999, 'Animation', '8.1', 'kidstv-90-poster-3.jpg', 'Spongebobsquarepants.mp4', 'A yellow sea sponge named SpongeBob SquarePants lives in the city of Bikini Bottom deep in the Pacific Ocean. He works at the Krusty Krab restaurant and is friends with a starfish named Patrick.'),
+(4, 'He-Man and the Masters of the Universe', 1983, 'Adventure', '7.5', 'kidstv-80-poster-1.jpg', 'Hemanandthemastersoftheuniverse.mp4', 'When he holds up the magical Sword of Power and utters the words \"By the power of Grayskull,\" Prince Adam transforms into Eternia\'s greatest champion, He-Man, who uses his powers to defend the realm from Skeletor and his evil forces.'),
 (5, 'Thomas & Friends', 1984, 'Family', '6.6', 'kidstv-80-poster-2.jpg', 'https://www.youtube.com/watch?v=fkB3F4-NI8A', 'Based on a series of children\'s books, \"Thomas & Friends\" features Thomas the Tank Engine going on adventures with his fellow locomotives on the island of Sodor.'),
-(6, 'Pingu', 1986, 'Comedy', '7.4', 'kidstv-80-poster-3.jpg', 'https://www.youtube.com/watch?v=N6KUqFz1Hi8', 'Pingu is a clumsy young penguin who lives with his family on a polar ice cap in Antarctica. Pingu goes on adventures with his sister, Pinga, and his friend, Robby the seal.'),
-(7, 'The Muppet Show', 1976, 'Comedy', '8.3', 'kidstv-70-poster-1.jpg', 'https://www.youtube.com/watch?v=hEinCgoA48E', 'A fantastic medley of sweet and mischievous, Jim Henson\'s Muppets, including Kermit the Frog and Miss Piggy, produce a weekly variety show with a range of famous guests. '),
-(8, 'Paddington Bear', 1976, 'Animation', '7.1', 'kidstv-70-poster-2.jpg', 'https://www.youtube.com/watch?v=YibHQ5rSm_I', 'The Brown family finds a teddy bear in Paddington Station.'),
-(9, 'Ivor the Engine', 1975, 'Animation', '7.3', 'kidstv-70-poster-3.jpg', 'https://www.youtube.com/watch?v=LrSv1ZSmwNk', 'Follow Ivor and his friends on their railway adventures.'),
-(10, 'Sesame Street', 1969, 'Comedy', '8.8', 'kidstv-60-poster-1.jpg', 'https://www.youtube.com/watch?v=LXqMzmFSX_4', 'A longtime favorite of children and adults, and a staple of PBS, \"Sesame Street\" bridges many cultural and educational gaps with a fun program.'),
-(11, 'Scooby-Do, Where Are You', 1969, 'Comedy', '7.8', 'kidstv-60-poster-2.jpg', 'https://www.youtube.com/watch?v=A2kuLBEghyI', 'Brainiac Velma, jock Fred, fashionista Daphne, hippie Shaggy, and Shaggy\'s highstrung, talking Great Dane, Scooby-Doo, climb into their green van, the Mystery Machine, and hit the road in search of weird phenomena to solve. '),
-(12, 'Speed Racer', 1967, 'Animation', '7.1', 'kidstv-60-poster-3.jpg', 'https://www.youtube.com/watch?v=e5XmMWnsiqU', 'An 18-year-old driver competes on the international racing circuit.'),
-(13, 'The Adventures of Rocky and Bullwinkle and Friends', 1959, 'Comedy', '7.7', 'kidstv-50-poster-1.jpg', 'https://www.youtube.com/watch?v=65t-OzhlmvE', 'The adventures of a moose and flying squirrel in Frostbite Falls, Minn.'),
-(14, 'The Ruff and Reddy Show', 1957, 'Comedy', '6.9', 'kidstv-50-poster-2.jpg', 'https://www.youtube.com/watch?v=sdKwuIxQ-Rs', 'The Ruff and Reddy Show is a 1957-1960 American animated series and the first made by Hanna-Barbera Productions for NBC.'),
-(15, 'The Huckleberry Hound Show', 1958, 'Comedy', '6.6', 'kidstv-50-poster-3.jpg', 'https://www.youtube.com/watch?v=iKkk_0ZBEGY', 'Following the success of their first animated series for television, \"The Ruff & Reddy Show,\" producers William Hanna and Joseph Barbera had another hit with their next endeavor.');
+(6, 'Pingu', 1986, 'Comedy', '7.4', 'kidstv-80-poster-3.jpg', 'Pingu.mp4', 'Pingu is a clumsy young penguin who lives with his family on a polar ice cap in Antarctica. Pingu goes on adventures with his sister, Pinga, and his friend, Robby the seal.'),
+(7, 'The Muppet Show', 1976, 'Comedy', '8.3', 'kidstv-70-poster-1.jpg', 'Themuppetshow.mp4', 'A fantastic medley of sweet and mischievous, Jim Henson\'s Muppets, including Kermit the Frog and Miss Piggy, produce a weekly variety show with a range of famous guests. '),
+(8, 'Paddington Bear', 1976, 'Animation', '7.1', 'kidstv-70-poster-2.jpg', 'Paddingtonbear.mp4', 'The Brown family finds a teddy bear in Paddington Station.'),
+(9, 'Ivor the Engine', 1975, 'Animation', '7.3', 'kidstv-70-poster-3.jpg', 'Ivortheengine.mp4', 'Follow Ivor and his friends on their railway adventures.'),
+(10, 'Sesame Street', 1969, 'Comedy', '8.8', 'kidstv-60-poster-1.jpg', 'Sesamestreet', 'A longtime favorite of children and adults, and a staple of PBS, \"Sesame Street\" bridges many cultural and educational gaps with a fun program.'),
+(11, 'Scooby-Do, Where Are You', 1969, 'Comedy', '7.8', 'kidstv-60-poster-2.jpg', 'Scooby-dowhereareyou.mp4', 'Brainiac Velma, jock Fred, fashionista Daphne, hippie Shaggy, and Shaggy\'s highstrung, talking Great Dane, Scooby-Doo, climb into their green van, the Mystery Machine, and hit the road in search of weird phenomena to solve. '),
+(12, 'Speed Racer', 1967, 'Animation', '7.1', 'kidstv-60-poster-3.jpg', 'Speedracer.mp4', 'An 18-year-old driver competes on the international racing circuit.'),
+(13, 'The Adventures of Rocky and Bullwinkle and Friends', 1959, 'Comedy', '7.7', 'kidstv-50-poster-1.jpg', 'Theadventuresofrockyandbullwinkleandfriends.mp4', 'The adventures of a moose and flying squirrel in Frostbite Falls, Minn.'),
+(14, 'The Ruff and Reddy Show', 1957, 'Comedy', '6.9', 'kidstv-50-poster-2.jpg', 'Theruffandreddyshow.mp4', 'The Ruff and Reddy Show is a 1957-1960 American animated series and the first made by Hanna-Barbera Productions for NBC.'),
+(15, 'The Huckleberry Hound Show', 1958, 'Comedy', '6.6', 'kidstv-50-poster-3.jpg', 'Thehuckleberryhoundshow.mp4', 'Following the success of their first animated series for television, \"The Ruff & Reddy Show,\" producers William Hanna and Joseph Barbera had another hit with their next endeavor.');
 
 -- --------------------------------------------------------
 
@@ -147,7 +147,7 @@ CREATE TABLE `tbl_movies` (
   `movies_genre` varchar(50) COLLATE utf8_bin NOT NULL,
   `movies_IMDd` varchar(20) COLLATE utf8_bin NOT NULL,
   `movies_poster` varchar(100) COLLATE utf8_bin NOT NULL,
-  `movies_trailer` varchar(250) COLLATE utf8_bin NOT NULL,
+  `movies_trailer` varchar(50) COLLATE utf8_bin NOT NULL,
   `movies_storyline` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -156,21 +156,21 @@ CREATE TABLE `tbl_movies` (
 --
 
 INSERT INTO `tbl_movies` (`movies_id`, `movies_title`, `movies_release`, `movies_genre`, `movies_IMDd`, `movies_poster`, `movies_trailer`, `movies_storyline`) VALUES
-(1, 'Pulp Ficition', '1994', 'Crime', '8.9', 'movie-90-poster-1.jpg', 'https://www.youtube.com/watch?v=IVtsMRCpaHI', 'In the realm of underworld, a series of incidents intertwines the lives of two Los Angeles mobsters, a gangster\'s wife, a boxer and two small-time criminals.'),
-(2, 'The Shawshank Redemption', '1994', 'Crime', '9.3', 'movie-90-poster-3.jpg', 'https://www.youtube.com/watch?v=K_tLp7T6U1c', 'Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner.'),
-(3, 'The Matrix', '1999', 'Sci-fi', '8.7', 'movie-90-poster-2.jpg', 'https://www.youtube.com/watch?v=3DfOTKGvtOM', 'Thomas Anderson, a computer programmer, is led to fight an underground war against powerful computers who have constructed his entire reality with a system called the Matrix.'),
-(4, 'The shining', '1980', 'Horror', '8.4', 'movie-80-poster-2.jpg', 'https://www.youtube.com/watch?v=HEew7zvpAWE', 'Jack and his family move into an isolated hotel with a violent past. Living in isolation, Jack begins to lose his sanity, which affects his family members.'),
-(5, 'Scarface', '1983', 'Crime', '8.3', 'movie-80-poster-3.jpg', 'https://www.youtube.com/watch?v=t0yg02S88us', 'Tony Montana and his close friend Manny, build a strong drug empire in Miami. However as his power begins to grow, so does his ego and his enemies, and his own paranoia begins to plague his empire.'),
-(6, 'Back to the Future', '1985', 'Sci-fi', '8.5', 'movie-80-poster-1.jpg', 'https://www.youtube.com/watch?v=jEnERs6GvDc\r\n\r\n', 'Marty travels back in time using an eccentric scientist\'s time machine. However, he must make his high-school-aged parents fall in love in order to return to the present.'),
-(7, 'Taxi Drive', '1976', 'Drama', '8.3', 'movie-70-poster-1.jpg', 'https://www.youtube.com/watch?v=UUxD4-dEzn0', 'Travis, an ex-marine and Vietnam veteran, works as a taxi driver in New York City. One day, he is driven to save an underage prostitute from her pimp in an effort to clean the city of its corruption.'),
-(8, 'Rocky', '1976', 'Drama', '8.1', 'movie-70-poster-2.jpg', 'https://www.youtube.com/watch?v=tXs7Wu4FlRQ', 'Rocky Balboa, a small-time boxer, gets a chance to fight heavyweight champion Apollo Creed. In a bid to earn respect and glory, Rocky jumps into the ring, unaware of the tough task ahead of him.'),
-(9, 'Alien', '1979', 'Sci-fi', '8.4', 'movie-70-poster-3.jpg', 'https://www.youtube.com/watch?v=zvMtBZX9YLA', 'The crew of a spacecraft, Nostromo, intercept a distress signal from a planet and set out to investigate it. However, to their horror, they are attacked by an alien which later invades their ship.'),
-(10, 'Psycho', '1960', 'Horror', '8.5', 'movie-60-poster-2.jpg', 'https://www.youtube.com/watch?v=uf2fa08xrIk', 'Marion disappears after stealing money from her employer. Her lover and sister try to find her and end up reaching the infamous Bates Motel, where they meet Norman Bates.'),
-(11, 'The Sound of Music', '1965', 'Family', '8', 'movie-60-poster-1.jpg', 'https://www.youtube.com/watch?v=ALsqam7CvwU', 'Maria, an aspiring nun, is sent as a governess to take care of seven motherless children. Soon her jovial and loving nature tames their hearts and the children become fond of her.'),
-(12, 'Bonnie and Clyde', '1967', 'Drama', '7.8', 'movie-60-poster-3.jpg', 'https://www.youtube.com/watch?v=FnZZjMSDG-Q\r\n\r\n', 'Bonnie and Clyde is a 1967 American biographical crime film directed by Arthur Penn and starring Warren Beatty and Faye Dunaway as the title characters Clyde Barrow and Bonnie Parker. Also featured were Michael J. Pollard, Gene Hackman, and Estelle Parsons. The screenplay was written by David Newman and Robert Benton.'),
-(13, 'Strangers on a Train', '1951', 'Thriller', '8', 'movie-50-poster-2.jpg', 'https://www.youtube.com/watch?v=Jtdmbx4Ky-A', 'Bruno, a psychotic male, meets Guy, a tennis player. During the train journey, Bruno realises that both wish to kill someone. He puts forth an idea where they both exchange murders to evade the cops.'),
-(14, 'Singin’ in the Rain', '1952', 'Comedy', '8.3', 'movie-50-poster-1.jpg', 'https://www.youtube.com/watch?v=MVXSOengxxw', 'When the transition is being made from silent films to `talkies\', everyone has trouble adapting. Don and Lina have been cast repeatedly as a romantic couple, but when their latest film is remade into a musical, only Don has the voice for the new singing part. '),
-(15, 'Giant', '1956', 'Drama', '7.6', 'movie-50-poster-3.jpg', 'https://www.youtube.com/watch?v=akmujlvZ8JU', 'A Texas ranching family fights to survive changing times. Bick Benedict, the Texan rancher falls in love with the horse owner\'s daughter and they immediately get married.');
+(1, 'Pulp Ficition', '1994', 'Crime', '8.9', 'movie-90-poster-1.jpg', 'Pulpficition.mp4\r\n', 'In the realm of underworld, a series of incidents intertwines the lives of two Los Angeles mobsters, a gangster\'s wife, a boxer and two small-time criminals.'),
+(2, 'The Shawshank Redemption', '1994', 'Crime', '9.3', 'movie-90-poster-3.jpg', 'Theshawshankredemption.mp4', 'Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner.'),
+(3, 'The Matrix', '1999', 'Sci-fi', '8.7', 'movie-90-poster-2.jpg', 'Thematrix.mp4', 'Thomas Anderson, a computer programmer, is led to fight an underground war against powerful computers who have constructed his entire reality with a system called the Matrix.'),
+(4, 'The shining', '1980', 'Horror', '8.4', 'movie-80-poster-2.jpg', 'Theshining.mp4', 'Jack and his family move into an isolated hotel with a violent past. Living in isolation, Jack begins to lose his sanity, which affects his family members.'),
+(5, 'Scarface', '1983', 'Crime', '8.3', 'movie-80-poster-3.jpg', 'Scarface.mp4', 'Tony Montana and his close friend Manny, build a strong drug empire in Miami. However as his power begins to grow, so does his ego and his enemies, and his own paranoia begins to plague his empire.'),
+(6, 'Back to the Future', '1985', 'Sci-fi', '8.5', 'movie-80-poster-1.jpg', 'Backtothefuture.mp4\r\n\r\n\r\n', 'Marty travels back in time using an eccentric scientist\'s time machine. However, he must make his high-school-aged parents fall in love in order to return to the present.'),
+(7, 'Taxi Drive', '1976', 'Drama', '8.3', 'movie-70-poster-1.jpg', 'Taxidrive.mp4', 'Travis, an ex-marine and Vietnam veteran, works as a taxi driver in New York City. One day, he is driven to save an underage prostitute from her pimp in an effort to clean the city of its corruption.'),
+(8, 'Rocky', '1976', 'Drama', '8.1', 'movie-70-poster-2.jpg', 'Rocky.mp4', 'Rocky Balboa, a small-time boxer, gets a chance to fight heavyweight champion Apollo Creed. In a bid to earn respect and glory, Rocky jumps into the ring, unaware of the tough task ahead of him.'),
+(9, 'Alien', '1979', 'Sci-fi', '8.4', 'movie-70-poster-3.jpg', 'Alien.mp4', 'The crew of a spacecraft, Nostromo, intercept a distress signal from a planet and set out to investigate it. However, to their horror, they are attacked by an alien which later invades their ship.'),
+(10, 'Psycho', '1960', 'Horror', '8.5', 'movie-60-poster-2.jpg', 'Psycho.mp4', 'Marion disappears after stealing money from her employer. Her lover and sister try to find her and end up reaching the infamous Bates Motel, where they meet Norman Bates.'),
+(11, 'The Sound of Music', '1965', 'Family', '8', 'movie-60-poster-1.jpg', 'Thesoundofmusic.mp4', 'Maria, an aspiring nun, is sent as a governess to take care of seven motherless children. Soon her jovial and loving nature tames their hearts and the children become fond of her.'),
+(12, 'Bonnie and Clyde', '1967', 'Drama', '7.8', 'movie-60-poster-3.jpg', 'Bonnieandclyde.mp4\r\n\r\n\r\n', 'Bonnie and Clyde is a 1967 American biographical crime film directed by Arthur Penn and starring Warren Beatty and Faye Dunaway as the title characters Clyde Barrow and Bonnie Parker. Also featured were Michael J. Pollard, Gene Hackman, and Estelle Parsons. The screenplay was written by David Newman and Robert Benton.'),
+(13, 'Strangers on a Train', '1951', 'Thriller', '8', 'movie-50-poster-2.jpg', 'Strangersonatrain.mp4', 'Bruno, a psychotic male, meets Guy, a tennis player. During the train journey, Bruno realises that both wish to kill someone. He puts forth an idea where they both exchange murders to evade the cops.'),
+(14, 'Singin’ in the Rain', '1952', 'Comedy', '8.3', 'movie-50-poster-1.jpg', 'Singinintherain.mp4', 'When the transition is being made from silent films to `talkies\', everyone has trouble adapting. Don and Lina have been cast repeatedly as a romantic couple, but when their latest film is remade into a musical, only Don has the voice for the new singing part. '),
+(15, 'Giant', '1956', 'Drama', '7.6', 'movie-50-poster-3.jpg', 'Giant.mp4', 'A Texas ranching family fights to survive changing times. Bick Benedict, the Texan rancher falls in love with the horse owner\'s daughter and they immediately get married.');
 
 -- --------------------------------------------------------
 
@@ -232,21 +232,21 @@ CREATE TABLE `tbl_tv` (
 --
 
 INSERT INTO `tbl_tv` (`tv_id`, `tv_title`, `tv_release`, `tv_genre`, `tv_IMDb`, `tv_poster`, `tv_trailer`, `tv_storyline`) VALUES
-(1, 'In Living Color', '1990', 'Comedy', '8.1', 'tv-90-poster-2.jpg', 'https://www.youtube.com/watch?v=NXNM0dTzHOE', 'This series provides a platform for the many members of the comedic Wayans family. Popular recurring sketches include Homey D. Clown, the Homeboy Shopping Network, Men on Film and Great Moments in Black History.'),
-(2, 'F.R.I.E.N.D.S', '1994', 'Sitcom', '8.9', 'tv-90-poster-1.jpg', 'https://www.youtube.com/watch?v=sLisEEwYZvw', 'Follow the lives of six reckless adults living in Manhattan, as they indulge in adventures which make their lives both troublesome and happening.'),
-(3, 'South Park', '1997', 'Comedy', '8.7', 'tv-90-poster-3.jpg', 'https://www.youtube.com/watch?v=S8p22rtNMoM', 'Four young, schoolgoing boys, Stan Marsh, Kyle Broflovski, Eric Cartman and Kenny McCormick, who live in South Park set out on various adventures.'),
-(4, 'ALF', '1986', 'Comedy', '7.4', 'tv-80-poster-3.jpg', 'https://www.youtube.com/watch?v=2hBSMInlDGg', 'A smart-mouthed creature, ALF (aka Alien Life Form), crash-lands in a suburban garage. His spaceship is beyond repair, he\'s ugly, he\'s short, he\'s got a bad attitude. \r\n'),
-(5, 'The Wonder Years', '1988', 'Comedy', '8.3', 'tv-80-poster-1.jpg', 'https://www.youtube.com/watch?v=sLisEEwYZvw', 'With a dry sense of humour and the insight one gains with maturity, a grown-up Kevin provides funny commentary on himself as a young boy trying to cope with the bizarre world of being a teenager.'),
-(6, 'The Simpson', '1989', 'Drama', '8.7', 'tv-80-poster-2.jpg', 'https://www.youtube.com/watch?v=kJDwaqxnNpM\r\n\r\n', 'Working-class father Homer Simpson and his dysfunctional family deal with comical situations and the ups-and-downs of life in the town of Springfield.\r\n'),
-(7, 'Good TImes', '1974', 'Comedy', '7.3', 'tv-70-poster-3.jpg', 'https://www.youtube.com/watch?v=5FVuEfA5QVY', 'Florida and James Evans struggle to raise their kids - irrepressible artist JJ, voice-of-reason Thelma, and politically active Michael - in a Chicago housing project. They have help from wisecracking neighbors, buffoonish building superintendents and friends.\r\n'),
-(8, 'Saturday Night Live', '1975', 'Comedy', '8.1', 'tv-70-poster-1.jpg', 'https://www.youtube.com/watch?v=p9v1vLuCO2c&list=PLY1aOKyiM_39LYgoxmRG6SmnMW892UuCE\r\n\r\n', 'Actors, comedians and artists get together to perform short, hilarious skits on current, intelligent and at times ridiculous topics.'),
-(9, 'Taxi', '1978', 'Comedy', '7.6', 'tv-70-poster-2.jpg', 'https://www.youtube.com/watch?v=S23oaLAEUpo\r\n\r\n', 'Louie De Palma, a taxi dispatcher, and the employees of a taxicab company deal with the trials and tribulations of life together after they form a great bond over time.'),
-(10, 'The Andy Griffith Show', '1960', 'Comedy', '8.3', 'tv-60-poster-3.jpg', 'https://www.youtube.com/watch?v=CpioDa-xHbw', 'Andy Taylor is the sheriff of a quiet sleepy town with little crime to solve. He lives with his son and his elderly aunt, and spends his time managing his son.'),
-(11, 'Star Trek: The Original Series', '1966', 'Drama', '8.3', 'tv-60-poster-1.jpg', 'https://www.youtube.com/watch?v=hdjL8WXjlGI', 'James T Kirk, who is the captain of the Starship Enterprise, explores the whole galaxy with his crew and goes on several adventures as they fight evil forces together.'),
-(12, 'Hawaii Five-O', '1968', 'Drama', '7.3', 'tv-60-poster-2.jpg', 'https://www.youtube.com/watch?v=AepyGm9Me6w', 'Detective Steve McGarrett heads up Hawaii Five-O, a special division of the state police tasked with bringing down organized crime on the islands. The Five-O team works with local police from time to time on individual cases, and McGarrett\'s nemesis is crime kingpin Wo Fat. '),
-(13, 'Gunsmoke', '1955', 'Drama', '7.9', 'tv-50-poster-1.jpg', 'https://www.youtube.com/watch?v=ui-mzTCmZPE', 'Marshal Matt Dillon lives in a Wild West town and protects it from troublemakers. He restores peace and tries to win over the love of a woman.'),
-(14, 'Wagon Train', '1957', 'Drama', '7.4', 'tv-50-poster-3.jpg', 'https://www.youtube.com/watch?v=BESu7Ly18uY', 'Major Seth Adams and his scout Flint McCullough embark on several adventures as they navigate the Wild West on a wagon train.'),
-(15, 'Bonanza', '1959', 'Drama', '7.3', 'tv-50-poster-2.jpg', 'https://www.youtube.com/watch?v=iQjb_QiFbJE', 'Ben Cartwright, along with his three sons, Joe, Adam and Hoss, faces several difficulties as they run their large ranch while also assisting the neighbouring community.\r\n');
+(1, 'In Living Color', '1990', 'Comedy', '8.1', 'tv-90-poster-2.jpg', 'Inlivingcolor.mp4', 'This series provides a platform for the many members of the comedic Wayans family. Popular recurring sketches include Homey D. Clown, the Homeboy Shopping Network, Men on Film and Great Moments in Black History.'),
+(2, 'F.R.I.E.N.D.S', '1994', 'Sitcom', '8.9', 'tv-90-poster-1.jpg', 'friends.mp4', 'Follow the lives of six reckless adults living in Manhattan, as they indulge in adventures which make their lives both troublesome and happening.'),
+(3, 'South Park', '1997', 'Comedy', '8.7', 'tv-90-poster-3.jpg', 'Southpark.mp4\r\n', 'Four young, schoolgoing boys, Stan Marsh, Kyle Broflovski, Eric Cartman and Kenny McCormick, who live in South Park set out on various adventures.'),
+(4, 'ALF', '1986', 'Comedy', '7.4', 'tv-80-poster-3.jpg', 'ALF.mp4\r\n', 'A smart-mouthed creature, ALF (aka Alien Life Form), crash-lands in a suburban garage. His spaceship is beyond repair, he\'s ugly, he\'s short, he\'s got a bad attitude. \r\n'),
+(5, 'The Wonder Years', '1988', 'Comedy', '8.3', 'tv-80-poster-1.jpg', 'Thewonderyears.mp4\r\n', 'With a dry sense of humour and the insight one gains with maturity, a grown-up Kevin provides funny commentary on himself as a young boy trying to cope with the bizarre world of being a teenager.'),
+(6, 'The Simpson', '1989', 'Drama', '8.7', 'tv-80-poster-2.jpg', 'Thesimpson.mp4\r\n', 'Working-class father Homer Simpson and his dysfunctional family deal with comical situations and the ups-and-downs of life in the town of Springfield.\r\n'),
+(7, 'Good TImes', '1974', 'Comedy', '7.3', 'tv-70-poster-3.jpg', 'Goodtimes.mp4', 'Florida and James Evans struggle to raise their kids - irrepressible artist JJ, voice-of-reason Thelma, and politically active Michael - in a Chicago housing project. They have help from wisecracking neighbors, buffoonish building superintendents and friends.\r\n'),
+(8, 'Saturday Night Live', '1975', 'Comedy', '8.1', 'tv-70-poster-1.jpg', 'Saturdaynightlive.mp4\r\n', 'Actors, comedians and artists get together to perform short, hilarious skits on current, intelligent and at times ridiculous topics.'),
+(9, 'Taxi', '1978', 'Comedy', '7.6', 'tv-70-poster-2.jpg', 'Taxi.mp4', 'Louie De Palma, a taxi dispatcher, and the employees of a taxicab company deal with the trials and tribulations of life together after they form a great bond over time.'),
+(10, 'The Andy Griffith Show', '1960', 'Comedy', '8.3', 'tv-60-poster-3.jpg', 'Theandygriffithshow.mp4\r\n', 'Andy Taylor is the sheriff of a quiet sleepy town with little crime to solve. He lives with his son and his elderly aunt, and spends his time managing his son.'),
+(11, 'Star Trek: The Original Series', '1966', 'Drama', '8.3', 'tv-60-poster-1.jpg', 'Startrektheoriginalseries.mp4', 'James T Kirk, who is the captain of the Starship Enterprise, explores the whole galaxy with his crew and goes on several adventures as they fight evil forces together.'),
+(12, 'Hawaii Five-O', '1968', 'Drama', '7.3', 'tv-60-poster-2.jpg', 'Hawaiifive-O.mp4', 'Detective Steve McGarrett heads up Hawaii Five-O, a special division of the state police tasked with bringing down organized crime on the islands. The Five-O team works with local police from time to time on individual cases, and McGarrett\'s nemesis is crime kingpin Wo Fat. '),
+(13, 'Gunsmoke', '1955', 'Drama', '7.9', 'tv-50-poster-1.jpg', 'Gunsmoke.mp4', 'Marshal Matt Dillon lives in a Wild West town and protects it from troublemakers. He restores peace and tries to win over the love of a woman.'),
+(14, 'Wagon Train', '1957', 'Drama', '7.4', 'tv-50-poster-3.jpg', 'Wagontrain.mp4', 'Major Seth Adams and his scout Flint McCullough embark on several adventures as they navigate the Wild West on a wagon train.'),
+(15, 'Bonanza', '1959', 'Drama', '7.3', 'tv-50-poster-2.jpg', 'Bonanza.mp4', 'Ben Cartwright, along with his three sons, Joe, Adam and Hoss, faces several difficulties as they run their large ranch while also assisting the neighbouring community.\r\n');
 
 -- --------------------------------------------------------
 
@@ -272,8 +272,8 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`, `user_avatar`, `user_permission`, `user_admin`) VALUES
-(1, 'stella', 'dd', '1234', 'stella@test.com', '2020-04-03 01:46:19', 'no', '', 5, 1),
-(2, 'hyeryn', 'kim', '1234', 'hrk9501@test.com', '2020-04-03 01:47:51', 'no', '', 3, 0);
+(1, 'stella', 'dd', '1234', 'stella@test.com', '2020-04-11 16:56:48', '127.0.0.1', 'lee', 5, 1),
+(2, 'hyeryn', 'kim', '1234', 'hrk9501@test.com', '2020-04-11 16:56:54', 'no', 'kim', 3, 0);
 
 --
 -- Indexes for dumped tables

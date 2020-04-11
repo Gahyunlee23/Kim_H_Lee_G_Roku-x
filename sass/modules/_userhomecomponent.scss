@@ -16,7 +16,12 @@
 .media-year, .media-time { font-size: 1em; }
 .media-year { display: block; float: right; }
 
-.side-nav { background: darken($dark-bg, 9%) }
+
+
+//change
+.side-nav { background: orange }
+.media-type {display: flex; justify-content: space-between;}
+
 
 // left hand pad list -> audio, film television
 .media-type { 
@@ -36,7 +41,7 @@
         }
     }
 
-    li:hover span:first-of-type { color: $roku-orange }
+    li:hover span:first-of-type { color: $roku-purple }
 }
 
 // genre filter links
@@ -56,7 +61,7 @@
             text-decoration: none;
         }
         
-        a:hover { color: $roku-orange; }
+        a:hover { color: $roku-purple; }
     }
 
     li::after {
