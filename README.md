@@ -1,6 +1,6 @@
 # Roku Flashback A_V App
 
-This project is building audio and video app using database and view components. All the movies and videos filtered by decades, genres, and IMDb. It also has two versions of the users (parent, child), so when uou login as a parent you can see the high rate movies which is you can't see if you are child.
+This project is building audio and video app using database and view components. All the movies and videos filtered by decades, genres, and IMDb. It also has two versions of the users (parent, child), so when uou login as a parent you can see the high rate movies which is you can't see if you are child
 
 ### Dependencies
 
