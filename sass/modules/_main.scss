@@ -2,12 +2,11 @@
 
 html { position: relative; min-height: 100%; }
 
-body {
-	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-	background-color: black;
-	color: white;
-	margin-bottom: 100px;
-	background: url(../images/gunmetal.jpg) repeat;
+body { font-family: proxima-nova, sans-serif; font-style: normal; margin: 0;}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 a {
@@ -62,7 +61,7 @@ nav:not(.side-nav) {
 
 .fa-exclamation-triangle { color: red; font-size: 1.5em; }
 
-.container > div:first-of-type { margin-top: 53px; }
+// .container > div:first-of-type { margin-top: 53px; }
 
 // resets for small sizes
 
