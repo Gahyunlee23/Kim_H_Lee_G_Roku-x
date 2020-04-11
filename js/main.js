@@ -4,6 +4,7 @@ import UserHomeComponent from './components/UserHomeComponenent.js';
 
 (() => {
   let router = new VueRouter({
+    // set routes
     routes: [
       { path: '/', redirect: { name: "login" } },
       { path: '/login', name: "login", component: LoginComponent },
@@ -28,7 +29,7 @@ import UserHomeComponent from './components/UserHomeComponenent.js';
       },
 
       logout() {
-
+        // push user back to login page
         this.$router.push({ name: "login" });
         this.authenticated = false;
 
@@ -62,6 +63,7 @@ import UserHomeComponent from './components/UserHomeComponenent.js';
   }).$mount("#app");
 
   // router.beforeEach((to, from, next) => {
+  //   console.log('router guard fired!', to, from, vm.authenticated);
 
   //   if (vm.authenticated == false) {
   //     next("/login");

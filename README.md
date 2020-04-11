@@ -1,33 +1,33 @@
-# Roku Flashback A_V App
+# Roku Flashback Project
 
-This project is building audio and video app using database and view components. All the movies and videos filtered by decades, genres, and IMDb. It also has two versions of the users (parent, child), so when uou login as a parent you can see the high rate movies which is you can't see if you are child
+### Take a trip back to yesteryear with your old audio, tv and film faves!
 
-### Dependencies
+#### Setup
+You have some options - Docker, or old school. 
 
-* HTML5
-* CSS3
-* SASS/CSS
-* AJAX/JS
-* VUE.js
-* MySQL
-* PHP
+If you're using a traditional PHP platform, then clone the repo to your localhost location (htdocs, www directory or wherever your local server expects to find your files).
 
-### Installing
+This is built with PHP on the back end, so you can either install the db_movies database with the tool of your choice, or drop the crutches and use the command line!. Configure your connection settings and you're ready to go.
 
-* cd to the directory of your choice
-* git clone the repository link
-* Edit and assess!
+Or you can let Docker do its thing.  
+
+If you don't have Docker installed, you'll need to get it [here](http://www.docker.com).
+
+CD into the project directory and run docker-compose up  
+When you're done, run docker-compose down
+
+Your app is running on http://localhost:8010  
+phpmyadmin is running on http://localhost:8011
 
 
-## License
-* MIT
+#### Dependencies:
+We've rolled our own PHP - no frameworks, just some classes and a bit of procedural code.
 
-## Acknowledgments
+We use Vue on the front end, but not the CLI or webpack - just Vue with ES6 modules. Also - no jQuery, just plain old JavaScript.
 
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [README Formatting](https://guides.github.com/features/mastering-markdown/)
-* [MeyerWeb CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
-* [Vue.js](https://vuejs.org/)
+We use Gulp for tooling - check <code>gulpfile.js</code> for reference. NPM install should get you up and running with your dev tools.
+
+We also use SASS.
 
 #### Built with:
 Vue (bare bones - no webpack!)
@@ -41,9 +41,4 @@ PHP
 JavaScript
 
 #### Authors / Dev Team:
-
-DEVELOPERS
-* [Gahyun Lee](https://github.com/Gahyunlee23)
-
-DESIGNERS
-* [Hyeryn Kim](https://github.com/hrk9501)
+TVR and SpiderPan

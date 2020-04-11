@@ -1,8 +1,9 @@
-import AudioComponent from "./components/AudioComponent.js";
-import MovieComponent from "./components/MovieComponent.js";
-
+import VideoComponent from './VideoComponent.js';
+import AudioComponent from './AudioComponent.js';
 
 export default {
+    name: "TheUserHomeComponent",
+
     props: ['currentuser'],
 
     template: `
@@ -11,7 +12,7 @@ export default {
 
         <!-- show media icons here -->
         <div class="row"> <!-- 2-up for nav and media info -->
-            <nav class="col-12 col-sm-3 side-nav">
+            <nav class="col-12 side-nav">
                 <ul class="media-type">
                     <li v-for="media in mediaTypes" :data-type="media.description" @click="switchMedia(media.component)">
                         <span>
@@ -26,20 +27,21 @@ export default {
     </div>
     `,
 
-        data: {
-            activeComponent: MovieComponent
-        },
+    data: function() {
+        return {
+            activeComponent: VideoComponent,
 
-        methods: {
-            switchMovie() {
-                this.activeComponent = MovieComponent
-            },
-            switchAudio() {
-                 this.activeComponent = AudioComponent
-            },
-            switchTv() {
-                this.activeComponent = TvComponent
-            }
-
+            mediaTypes: [
+               { iconClass: "fas fa-film", description: "Movies", component: VideoComponent },
+               { iconClass: "fas fa-tv", description: "Television", component: VideoComponent },
+               { iconClass: "fas fa-headphones", description: "Music", component: AudioComponent }
+            ]
         }
+    },
+
+    methods: {
+        switchMedia(theComponent) {
+            this.activeComponent = theComponent;
+        }
+    }
 }
