@@ -43,8 +43,6 @@ export default {
         login() {
 
             if (this.input.username != "" && this.input.password != "") {
-                // fetch the user from the DB
-                // generate the form data
                 let formData = new FormData();
 
                 formData.append("username", this.input.username);
@@ -56,11 +54,11 @@ export default {
                     method: 'POST',
                     body: formData
                 })
-                    .then(res => res.json()) //get the data back from php file
+                    .then(res => res.json())
                     .then(data => {
-                        if (typeof data != "object") { // means that we're not getting a user object back
+                        if (typeof data != "object") { 
                             console.warn(data);
-                            // just for testing, do something better
+    
                             alert("authentication failed, please try again");
                         } else {
                             this.$emit("authenticated", true, data);
