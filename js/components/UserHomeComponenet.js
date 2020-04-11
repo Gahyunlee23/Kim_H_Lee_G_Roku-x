@@ -1,3 +1,7 @@
+import AudioComponent from "./components/TheAudioComponent.js";
+import MovieComponent from "./components/TheMovieComponent.js";
+import TvComponent from "./components/TheTvComponent.js";
+
 export default {
     props: ['currentuser'],
 
@@ -20,5 +24,22 @@ export default {
             </nav>
         </div>
     </div>
-    `
+    `,
+
+        data: {
+            activeComponent: MovieComponent
+        },
+
+        methods: {
+            switchMovie() {
+                this.activeComponent = MovieComponent
+            },
+            switchAudio() {
+                 this.activeComponent = AudioComponent
+            },
+            switchTv() {
+                this.activeComponent = TvComponent
+            }
+
+        }
 }
