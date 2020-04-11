@@ -1,5 +1,6 @@
 export default {
     template: `
+
     <div class="loginCon">
         <div class="formbox">
             <div class="login">
