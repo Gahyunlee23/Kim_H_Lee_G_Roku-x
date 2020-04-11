@@ -1,6 +1,6 @@
-import AudioComponent from "./components/TheAudioComponent.js";
-import MovieComponent from "./components/TheMovieComponent.js";
-import TvComponent from "./components/TheTvComponent.js";
+import AudioComponent from "./components/AudioComponent.js";
+import MovieComponent from "./components/MovieComponent.js";
+
 
 export default {
     props: ['currentuser'],
