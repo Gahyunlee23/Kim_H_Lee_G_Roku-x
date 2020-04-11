@@ -41,7 +41,7 @@
         }
     }
 
-    li:hover span:first-of-type { color: $roku-purple }
+    li:hover span:first-of-type { color: $roku-orange }
 }
 
 // genre filter links
@@ -61,7 +61,7 @@
             text-decoration: none;
         }
         
-        a:hover { color: $roku-purple; }
+        a:hover { color: $roku-orange; }
     }
 
     li::after {
