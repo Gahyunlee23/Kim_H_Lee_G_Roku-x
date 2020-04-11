@@ -18,9 +18,7 @@
   <main id="app">
 	<div class="container-fluid">
 		<div class="row">
-			<header class="col-sm-12 fixed-top">
-				<img src="images/orange-logo.svg" alt="Roku logo" width="90">
-				<nav class="float-right">
+
 				<ul>
 					<!-- <li>Kids</li> -->            
 					<li v-if="authenticated"><i class="fas fa-user-circle"></i></li>
@@ -30,23 +28,11 @@
 				</nav>
 			</header>
 		</div>
-	</div> <!-- end container fluid -->
+	</div>
 	
-	<!-- first thing in component templates should be a container -->
 	<router-view @authenticated="setAuthenticated"/>	
 
 	</main>
-    <footer class="mainFooter">
-        <div class="footerLogo">
-            <img src="images/orange-logo.svg" alt="mainlogo">
-        </div>
-        <div class="socialicons">
-            <img src="images/sns_instagram.svg" alt="insta">
-            <img src="images/sns_twitter.svg" alt="twitter">
-            <img src="images/sns_facebook.svg" alt="facebook">
-        </div>
-        <p>2020 Roku. Inc</p>
-    </footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
